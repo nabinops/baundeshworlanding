@@ -36,7 +36,11 @@ document.getElementById('enquiry-form').addEventListener('submit', async functio
         const apiUrl = 'https://api.abinashtiwari.com.np/api/enquiries';
         const response = await fetch(apiUrl, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 
+                'Content-Type': 'application/json',
+                'x-client-id': 'baundeshwor',
+                'x-app-version': '0.0.0'
+            },
             body: JSON.stringify(data)
         });
 
