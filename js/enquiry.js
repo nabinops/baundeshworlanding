@@ -33,7 +33,8 @@ document.getElementById('enquiry-form').addEventListener('submit', async functio
     };
 
     try {
-        const response = await fetch(form.action, {
+        const apiUrl = 'https://api.abinashtiwari.com.np/api/enquiries';
+        const response = await fetch(apiUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
