@@ -39,7 +39,8 @@ document.getElementById('enquiry-form').addEventListener('submit', async functio
             headers: { 
                 'Content-Type': 'application/json',
                 'x-client-id': 'baundeshwor',
-                'x-app-version': '0.0.0'
+                'x-app-version': '0.0.0',
+                'x-service': 'order'
             },
             body: JSON.stringify(data)
         });
