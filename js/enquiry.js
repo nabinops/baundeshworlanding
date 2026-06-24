@@ -33,7 +33,7 @@ document.getElementById('enquiry-form').addEventListener('submit', async functio
     };
 
     try {
-        const apiUrl = 'https://api.abinashtiwari.com.np/api/enquiries';
+        const apiUrl = 'https://apii.abinashtiwari.com.np/api/enquiries';
         const response = await fetch(apiUrl, {
             method: 'POST',
             headers: { 
